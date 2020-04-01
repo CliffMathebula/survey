@@ -177,7 +177,13 @@
   });
 });
 
-
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
   </script>
 </head>
 <body>
@@ -414,7 +420,7 @@
     <div class="col-l">
     <form action="#">
   <label class="text-danger"> 7. Is there anything else you might want to add or mention? </label><br/>
-    <textarea class="form-control col-xs-12" rows="3" cols="20" required></textarea><br/>
+    <textarea class="form-control col-xs-12" rows="3" cols="20" ></textarea><br/>
 <input type="submit" id="button7" class="btn btn-danger btn-l" value="Next"><br><br>
 </form>
 </div>
