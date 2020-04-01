@@ -30,12 +30,14 @@
     
     $("#p").show();
     $("#button0").show();    
-
+    $("#bar1").hide();
+    $("#bar2").hide();
+    
   $("#button0").click(function(){
     $("#div1").fadeIn(1000);
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").show();
+    $("#bar1").show();
   });
 
 
@@ -43,7 +45,8 @@
     $("#div1").hide();
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
+    $("#bar1").hide();
+    $("#bar2").show();
     $("#div2").fadeIn(1000);
   });
 
@@ -155,11 +158,13 @@
 
     <label class="text-danger"> 2. How would you rate the load speed on the Genex Insights platform? </label>
     
+<div class="d-flex justify-content-start">Extremely Low</div>
+  
     <!-- Default unchecked -->
-    <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" valu="1" id="defaultUnchecked" name="defaultExampleRadios">
   <label class="custom-control-label" for="defaultUnchecked">1</label>
-</div>
+
     <!-- Default unchecked -->
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
@@ -205,7 +210,6 @@
   <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
   <label class="custom-control-label" for="defaultUnchecked">10</label>
 </div>
-<div class="d-flex justify-content-start">Extremely Low</div>
 <div class="d-flex justify-content-end">Extremely High</div>
 
 <input type="button" id="button2" class="btn btn-danger btn-l" value="Next"><br><br>
@@ -372,14 +376,30 @@
 <footer class="footer">
   <div class="container" row="50%">
 
-  <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  <div class="progress" id="bar1">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:0%">
     0%
   </div>
-</div> 
-
+ </div> 
+ 
+ <div class="progress" id="bar2">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:28%">
+    28%
   </div>
+ </div> 
+ 
+
+ <div class="progress" id="bar2">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:14%">
+    14%
+  </div>
+ </div> 
+ 
+ </div>
+
 </footer>
 </body>
 
