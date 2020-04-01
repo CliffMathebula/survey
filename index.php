@@ -34,6 +34,10 @@
     $("#bar2").hide();
     $("#bar3").hide();
     $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
 
   $("#button0").click(function(){
     $("#div1").fadeIn(1000);
@@ -43,6 +47,10 @@
     $("#bar2").hide();
     $("#bar3").hide();
     $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
 
@@ -55,6 +63,10 @@
     $("#bar2").show();
     $("#bar3").hide();
     $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
 
@@ -68,7 +80,10 @@
     $("#bar2").hide();
     $("#bar3").show();
     $("#bar4").hide();
-
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
   $("#button3").click(function(){
@@ -82,7 +97,10 @@
     $("#bar2").hide();
     $("#bar3").hide();
     $("#bar4").show();
-
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
   $("#button4").click(function(){
@@ -92,8 +110,15 @@
     $("#div4").fadeOut(1000);
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div5").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").hide();
+    $("#bar5").show();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
   $("#button5").click(function(){
@@ -103,8 +128,15 @@
     $("#div5").fadeOut(1000);
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div6").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").show();
+    $("#bar7").hide();
+    $("#bar8").hide();
   });
 
   $("#button6").click(function(){
@@ -114,8 +146,15 @@
     $("#div6").fadeOut(1000);
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div7").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").show();
+    $("#bar8").hide();
   });
 
 
@@ -126,8 +165,15 @@
     $("#div7").fadeOut(1000);
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div8").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").hide();
+    $("#bar5").hide();
+    $("#bar6").hide();
+    $("#bar7").hide();
+    $("#bar8").show();
   });
 });
 
@@ -419,9 +465,36 @@
   </div>
  </div> 
  
-
+ <div class="progress" id="bar5">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:57%">
+    57%
+  </div>
+ </div> 
+ 
+ <div class="progress" id="bar6">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:71%">
+    71%
+  </div>
  </div>
 
+ <div class="progress" id="bar7">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:81%">
+    81%
+  </div>
+ </div>
+ 
+
+ <div class="progress" id="bar8">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    100%
+  </div>
+ </div>
+ 
+ </div>
 </footer>
 </body>
 
