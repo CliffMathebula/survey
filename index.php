@@ -32,12 +32,17 @@
     $("#button0").show();    
     $("#bar1").hide();
     $("#bar2").hide();
-    
+    $("#bar3").hide();
+    $("#bar4").hide();
+
   $("#button0").click(function(){
     $("#div1").fadeIn(1000);
     $("#p").hide();
     $("#button0").hide();
     $("#bar1").show();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").hide();
   });
 
 
@@ -45,9 +50,11 @@
     $("#div1").hide();
     $("#p").hide();
     $("#button0").hide();
+    $("#div2").fadeIn(1000);
     $("#bar1").hide();
     $("#bar2").show();
-    $("#div2").fadeIn(1000);
+    $("#bar3").hide();
+    $("#bar4").hide();
   });
 
 
@@ -56,8 +63,12 @@
     $("#div2").hide();
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div3").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").show();
+    $("#bar4").hide();
+
   });
 
   $("#button3").click(function(){
@@ -66,8 +77,12 @@
     $("#div3").hide();
     $("#p").hide();
     $("#button0").hide();
-    //$("#button2").hide();
     $("#div4").fadeIn(1000);
+    $("#bar1").hide();
+    $("#bar2").hide();
+    $("#bar3").hide();
+    $("#bar4").show();
+
   });
 
   $("#button4").click(function(){
@@ -157,14 +172,12 @@
     <div class="col-l">
 
     <label class="text-danger"> 2. How would you rate the load speed on the Genex Insights platform? </label>
-    
-<div class="d-flex justify-content-start">Extremely Low</div>
-  
+    <div class="d-flex justify-content-start">Extremely Low</div>    
     <!-- Default unchecked -->
-<div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" valu="1" id="defaultUnchecked" name="defaultExampleRadios">
+    <div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
   <label class="custom-control-label" for="defaultUnchecked">1</label>
-
+</div>
     <!-- Default unchecked -->
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
@@ -210,6 +223,7 @@
   <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
   <label class="custom-control-label" for="defaultUnchecked">10</label>
 </div>
+
 <div class="d-flex justify-content-end">Extremely High</div>
 
 <input type="button" id="button2" class="btn btn-danger btn-l" value="Next"><br><br>
@@ -385,19 +399,27 @@
  
  <div class="progress" id="bar2">
   <div class="progress-bar"  role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:28%">
-    28%
-  </div>
- </div> 
- 
-
- <div class="progress" id="bar2">
-  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:14%">
     14%
   </div>
  </div> 
  
+ 
+ <div class="progress" id="bar3">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:28%">
+    28%
+  </div>
+ </div> 
+ 
+ <div class="progress" id="bar4">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:42%">
+    42%
+  </div>
+ </div> 
+ 
+
  </div>
 
 </footer>
